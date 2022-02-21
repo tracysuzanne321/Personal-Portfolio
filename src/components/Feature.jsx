@@ -1,8 +1,10 @@
 const Feature = () => {
 	return (
-		<div>
-			<h1>Feature</h1>
-		</div>
+		<section class="feature">
+			<a href="https://github.com/tracysuzanne321">
+				<p>View my GitHub Profile</p>
+			</a>
+		</section>
 	);
 };
 
