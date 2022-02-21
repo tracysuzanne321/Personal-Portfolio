@@ -11,13 +11,11 @@ const Header = () => {
 					<h1>Tracy Smith</h1>
 					<h2>Software Developer</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga magni
-						illum labore natus? Repudiandae minus ipsum consequuntur! Minima
-						dolore corporis ratione dolorum quas cumque amet exercitationem.
-						Minima cum et autem.
+						I am a passionate software developer, proficient in React Js and the
+						latest modern technologies.
 					</p>
 
-					<a href="/">My Projects</a>
+					<a href="#projects">My Projects</a>
 				</div>
 			</div>
 		</header>

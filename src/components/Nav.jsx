@@ -2,13 +2,13 @@ const Nav = () => {
 	return (
 		<nav class="nav">
 			<ul>
-				<a href="/">
+				<a href="#about">
 					<li>About</li>
 				</a>
-				<a href="/">
+				<a href="#projects">
 					<li>Projects</li>
 				</a>
-				<a href="/">
+				<a href="#contact">
 					<li>Contact</li>
 				</a>
 			</ul>

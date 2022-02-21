@@ -1,27 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;400;500&display=swap');
 
 * {
-	margin: 0;
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 400;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+}
+
 .feature {
+	display: none;
 	padding: 10px;
-	background-color: #f855d7;
+	background-color: #d020ac;
 	position: fixed;
 	z-index: 1;
-	width: 100%;
+	border-radius: 0 0 5px 0;
 }
+
+@media screen and (min-width: 320px) {
+	.feature {
+		display: block;
+	}
+}
+
 .feature a {
 	text-decoration: none;
 	color: white;
-	text-align: center;
 }
 
 .nav {
-	padding: 25px;
+	padding: 32px 10px 0;
 }
 
 .nav li {
@@ -31,55 +54,59 @@
 .nav a {
 	text-decoration: none;
 	color: black;
-	padding: 5px;
+	padding: 10px;
 	transition: ease-out 0.5s;
 }
 .nav ul {
-	margin-top: 40px;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	padding: 0;
 }
 
 .nav a:hover {
-	background-color: #f855d7;
-	padding: 5px;
+	background-color: #d020ac;
+	padding: 10px;
 	color: white;
 	border-radius: 5px;
 	transition: ease-in 0.5s;
 }
 
 .header {
-	height: 600px;
+	overflow: hidden;
+	position: relative;
 }
 
 .banner-background {
 	position: absolute;
-	height: 600px;
-	min-width: 100vw;
+	height: 100%;
+	width: 100%;
 	object-fit: cover;
-	object-position: top;
+	object-position: right;
 }
 
 .banner-info {
 	position: relative;
-	max-width: 65%;
-	height: 600px;
 	color: white;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 	align-items: center;
+	padding: 25px 20px;
 }
 
 .banner-text {
-	max-width: 60%;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	align-items: center;
+	text-align: center;
+}
+
+.banner-text h2 {
+	margin-bottom: 20px;
 }
 
 .banner-info img {
-	height: 220px;
+	height: 120px;
 	border-radius: 50%;
 	border: 1px white solid;
 }
@@ -91,13 +118,13 @@
 
 .banner-info a {
 	padding: 10px 25px 10px 25px;
-	background-color: #f855d7;
-	border: 1px #f855d7 solid;
+	background-color: #d020ac;
+	border: 1px #d020ac solid;
 	border-radius: 5px;
 	text-decoration: none;
 	color: white;
 	text-align: center;
-	width: 30%;
+	width: 150px;
 	margin-top: 15px;
 	transition: ease-out 0.5s;
 }
@@ -111,31 +138,40 @@
 
 .about {
 	display: flex;
-	max-width: 80%;
-	margin: 50px auto;
+	padding: 20px 20px;
 	align-items: center;
 	text-align: center;
 }
+
 .about h3 {
 	font-family: 'Great Vibes', cursive;
-	padding-top: 25px;
 	font-size: 50px;
 }
 
 .about p {
-	padding: 25px 0 25px 0;
-	text-align: left;
+	text-align: center;
+	margin-top: 20px;
 }
 .container-two {
 	background-color: rgb(250, 250, 250);
+	padding: 25px 0 25px 0;
+}
+
+.container {
+	background-color: white;
+	box-shadow: 5px 5px 15px 5px rgb(136, 136, 136);
+	margin: 25px;
+	border-radius: 5px;
+}
+
+.container:hover {
+	transform: rotate(0.5deg);
 }
 .projects {
-	display: grid;
-	grid-template-columns: 2fr 2fr;
-	grid-gap: 30px;
-	max-width: 80%;
-	margin: 50px auto;
-	padding-bottom: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 25px;
 }
 
 .projects-h3 {
@@ -144,31 +180,29 @@
 }
 .projects-h3 h3 {
 	font-family: 'Great Vibes', cursive;
-	padding-top: 25px;
 	font-size: 50px;
 }
 
 .projects h4 {
-	text-decoration: underline;
-	padding: 25px 0 25px 0;
+	font-family: 'Great Vibes', cursive;
+	padding: 25px;
 	font-size: 20px;
+	color: #333;
+	text-align: center;
 }
 
 .projects img {
-	height: 280px;
+	width: 100%;
 	transition: all 0.3s ease;
 	border-radius: 4px;
-	box-shadow: 5px 5px 15px 5px rgb(136, 136, 136);
-}
-
-.projects img:hover {
-	transform: rotate(3deg);
+	padding: 0 15px 15px 15px;
 }
 
 .contact {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	margin-top: 25px;
 }
 
 .contact h3 {
@@ -179,6 +213,33 @@
 .contact img {
 	height: 120px;
 	padding: 25px;
+	transition: ease 1s;
+}
+
+.contact img:hover {
+	transform: scaleY(1.2) scaleX(1.2);
+	transition: ease 1s;
+}
+
+.contact-button {
+	display: block;
+	margin: 25px auto;
+	padding: 10px 25px 10px 25px;
+	background-color: #d020ac;
+	border: 1px #d020ac solid;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	width: 30%;
+	transition: ease-out 0.5s;
+}
+
+.contact-button:hover {
+	background-color: transparent;
+	border: 1px #d020ac solid;
+	color: #d020ac;
+	transition: ease-in 0.5s;
 }
 
 footer {
@@ -186,4 +247,105 @@ footer {
 	background-color: black;
 	color: white;
 	text-align: center;
+}
+
+.lang-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.lang-info h4 {
+	font-size: 25px;
+	font-family: 'Great Vibes', cursive;
+}
+
+.lang-li ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+}
+
+.lang-li li {
+	list-style-type: none;
+	padding: 20px;
+}
+
+@media screen and (min-width: 800px) {
+	.projects {
+		flex-wrap: wrap;
+	}
+	.container {
+		width: 40%;
+	}
+
+	.banner-info {
+		max-width: 65%;
+		flex-direction: row;
+	}
+
+	.banner-text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: left;
+	}
+
+	.banner-info img {
+		margin-right: 20px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.banner-info {
+		align-items: center;
+		height: 500px;
+		max-width: 60%;
+	}
+
+	.banner-background {
+		height: 500px;
+	}
+
+	.banner-info img {
+		margin: 0 50px 0 50px;
+	}
+
+	.header {
+		height: 600px;
+	}
+
+	.banner-info img {
+		height: 220px;
+	}
+	.banner-info h1 {
+		font-family: 'Great Vibes', cursive;
+		font-size: 60px;
+	}
+	.banner-info h2 {
+		font-size: 30px;
+	}
+
+	.banner-info p {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
+	.about {
+		display: flex;
+		padding: 40px 100px 80px 100px;
+		align-items: center;
+	}
+	.projects h4 {
+		font-size: 25px;
+	}
+	.lang-info {
+		padding-bottom: 100px;
+	}
+	.lang-info h4 {
+		font-size: 35px;
+		font-family: 'Great Vibes', cursive;
+	}
 }

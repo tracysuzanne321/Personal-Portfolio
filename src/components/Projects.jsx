@@ -5,12 +5,12 @@ import cats from '../images/catsforlyf.png';
 
 const Projects = () => {
 	return (
-		<div className="container-two">
+		<div id="projects" className="container-two">
 			<div className="projects-h3">
 				<h3>My Projects</h3>
 			</div>
 			<div class="projects">
-				<article>
+				<article className="container">
 					<h4>Social Card</h4>
 					<a
 						href="https://socialcard-uk.netlify.app/"
@@ -19,7 +19,7 @@ const Projects = () => {
 						<img src={socialCard} alt="Social Card Website" />
 					</a>
 				</article>
-				<article>
+				<article className="container">
 					<h4>My Music</h4>
 					<a
 						href="https://mymusic-uk.netlify.app/"
@@ -28,7 +28,7 @@ const Projects = () => {
 						<img src={myMusic} alt="My Music Website" />
 					</a>
 				</article>
-				<article>
+				<article className="container">
 					<h4>Memory Game</h4>
 					<a
 						href="https://memory-game321.netlify.app"
@@ -37,7 +37,7 @@ const Projects = () => {
 						<img src={Magic} alt="Magic Memory Game Website" />
 					</a>
 				</article>
-				<article>
+				<article className="container">
 					<h4>Cats 4 Lyf</h4>
 					<a
 						href="https://tracysuzanne321.github.io/cats4lyf/"

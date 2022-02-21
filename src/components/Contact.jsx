@@ -3,9 +3,12 @@ import linkedin from '../images/linkedin.png';
 
 const Contact = () => {
 	return (
-		<section className="contact">
+		<section id="contact" className="contact">
 			<div>
-				<h3>Contact Me</h3>
+				<h3>Contact</h3>
+				<a className="contact-button" href="mailto:tracysmith32@live.co.uk">
+					Email Me
+				</a>
 				<a href="https://github.com/tracysuzanne321">
 					<img src={github} alt="GitHub Logo" />
 				</a>
