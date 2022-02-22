@@ -6,7 +6,7 @@ const About = () => {
 					<h3>About Me</h3>
 
 					<p>
-						My name is Tracy and I have been designing websites since 2015. i
+						My name is Tracy and I have been designing websites since 2015. I
 						recently graduated from Codenation Bootcamp where I was able to
 						further my knowledge and skills in both front-end and back-end
 						technologies.
