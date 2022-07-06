@@ -1,46 +1,117 @@
+import heroImage from '../images/hero.svg';
+import codingLogo from '../images/coding-icon.svg';
+import lectureLogo from '../images/lecture-icon.svg';
+
 const About = () => {
 	return (
 		<>
-			<section id="about" class="about">
+			<section id="about">
 				<div>
-					<h3>About Me</h3>
+					<img
+						className=" mx-auto mt-4 md:h-80 "
+						src={heroImage}
+						alt=""
+						srcset=""
+					/>
+					<div className="bg-pink-400 flex flex-col space-y-5 text-center pt-16 pb-48 ">
+						<h3 className="text-xl font-bold text-white">
+							Hi, I'm Tracy. Nice to meet you.
+						</h3>
+						<p className="max-w-sm mx-auto text-sm text-white font-light md:max-w-xl ">
+							I have been designing and developing websites as a hobby since
+							2015. In July 2021, during the lockdown, I decided to make a
+							change and follow my passion. I registered for a coding boot camp
+							to update my knowledge and handed in my notice as a customer
+							service manager.
+						</p>
+						<p className="max-w-sm mx-auto text-sm text-white font-light  md:max-w-xl">
+							During the Bootcamp, I was introduced to React JS, which is my new
+							found passion, and I have developed several full-stack React Apps
+							and have utilised many third-party libraries within them. During
+							my twelve-week journey I created a full-stack music application as
+							an individual task, and for the final group project, our amazing
+							group created a social media full-stack application.
+						</p>
+						<p className="max-w-sm mx-auto text-sm text-white font-light md:max-w-xl">
+							I graduated from Codenation Bootcamp and was subsequently offered
+							a role as an Innovation Developer and quickly progressed to a
+							Software Instructor. During my time at Codenation, besides
+							teaching and updating resources, I created a front end application
+							for the front end team to store and organise all of the teaching
+							materials, resources and timetables. See my projects{' '}
+							<span className="underline font-bold cursor-pointer">
+								<a href="#projects">here</a>
+							</span>
+							.
+						</p>
+					</div>
 
-					<p>
-						My name is Tracy and I have been designing websites since 2015. I
-						recently graduated from Codenation Bootcamp where I was able to
-						further my knowledge and skills in both front-end and back-end
-						technologies.
-					</p>
-					<p>
-						During the Bootcamp I was introduced to React JS which is my new
-						found passion and I have developed several full stack React Apps and
-						have utilised many third party libraries within them.
-					</p>
-					<p>
-						I enjoy keeping up to date with all the latest modern technologies
-						and do so regularly in my spare time.
-					</p>
-
-					<a href="http://">
-						<img src="./images/linkedin.png" alt="" />
-					</a>
-					<a href="http://">
-						<img src="./images/github.png" alt="" />
-					</a>
+					<div className=" main bg-white border  border-gray-300 rounded-md max-w-4xl mx-auto flex flex-col md:flex-row justify-evenly py-10 text-center lg:max-w-6xl">
+						<div className="flex flex-col w-50%  ">
+							<img
+								className="w-10 h-10 mx-auto "
+								src={codingLogo}
+								alt=""
+								srcset=""
+							/>
+							<div className="text-xl font-bold py-2.5">
+								Junior Software Developer
+							</div>
+							<div className="text-md font-bold py-2.5 text-pink-500">
+								Technical Stack
+							</div>
+							<div className="text-sm font-light ">
+								JavaScript, React JS, HTMl 5, CSS 3
+							</div>
+							<div className="text-sm font-light ">
+								TypeScript, SCSS 3, Tailwind CSS, Next JS
+							</div>
+							<div className="text-sm font-light ">
+								Node JS, MongoDB, Mongoose, Express, TDD
+							</div>
+							<div className="text-md font-bold py-5 text-pink-500">
+								Dev Tools
+							</div>
+							<div className="text-sm font-light ">
+								Git, Bitbucket, VS Code Studio, Jest
+							</div>
+						</div>
+						<hr className="my-5  border-1 border-gray-300 md:hidden "></hr>
+						<div className="hidden md:block border-l border-0  border-gray-300">
+							{''}
+						</div>
+						<div className="w-50%">
+							<img
+								className="w-10 h-10 mx-auto"
+								src={lectureLogo}
+								alt=""
+								srcset=""
+							/>
+							<div className="text-xl font-bold py-2.5">
+								Software Instructor
+							</div>
+							<div className="text-md font-bold py-2.5 text-pink-500">
+								Technical Curriculum
+							</div>
+							<div className="text-sm font-light ">
+								Fundamentals of JavaScript, HTML & CSS
+							</div>
+							<div className="text-sm font-light ">
+								JavaScript DOM, Intermediate JavaScript
+							</div>
+							<div className="text-sm font-light ">
+								Introduction to React JS, Intermediate React JS
+							</div>
+							<div className="text-md font-bold py-5 text-pink-500">
+								Extra Curricular
+							</div>
+							<div className="text-sm font-light ">
+								Mentored Agile Principles, Guided lightning talks
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
-			<div className="lang-info">
-				<h4>Front End Proficiencies</h4>
-				<section className="lang-li">
-					<ul>
-						<li># HTML</li>
-						<li># JAVASCRIPT</li>
-						<li># CSS</li>
-						<li># React JS</li>
-						<li># Tailwind CSS</li>
-					</ul>
-				</section>
-			</div>
 		</>
 	);
 };

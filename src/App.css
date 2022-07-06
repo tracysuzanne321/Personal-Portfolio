@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;400;500&display=swap');
-
 * {
 	box-sizing: border-box;
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 400;
 }
 
 p,
@@ -22,8 +18,78 @@ html {
 	margin: 0;
 	padding: 0;
 }
+.main {
+	margin-top: -150px;
+}
 
-.feature {
+.line {
+	border-left: 1px solid #d1d5db;
+	height: 350px;
+}
+
+hr {
+	width: 80%;
+	margin-left: 10% !important;
+	margin-right: 10% !important;
+}
+
+.image {
+	position: relative;
+}
+
+.image img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.image:after {
+	content: '\A';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(63, 63, 70);
+	opacity: 0;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	border-radius: 8px;
+}
+
+.image:hover:after {
+	opacity: 1;
+	border-radius: 8px;
+}
+
+.project-btn {
+	display: none;
+}
+
+.image:hover > .project-btn {
+	display: block;
+	opacity: 0;
+	animation: fade 1s ease-in-out 0.1s forwards;
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.react-icons {
+	width: 40px;
+	height: 40px;
+	margin-top: 50px;
+}
+
+.react-icons:hover {
+	color: #3f3f46;
+}
+/* .feature {
 	display: none;
 	padding: 10px;
 	background-color: #d020ac;
@@ -348,4 +414,4 @@ footer {
 		font-size: 35px;
 		font-family: 'Great Vibes', cursive;
 	}
-}
+} */
