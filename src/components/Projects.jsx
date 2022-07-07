@@ -6,8 +6,8 @@ import Codenation from '../images/codenation.svg';
 const Projects = () => {
 	return (
 		<div id="projects" className="container-two">
-			<div className="flex flex-col py-5 text-center">
-				<div className="text-xl font-bold py-4">My Recent Work</div>
+			<div className="flex flex-col py-5 text-center max-w-xs mx-auto sm:max-w-xl md:max-w-full">
+				<div className="text-2xl font-bold py-4">My Recent Work</div>
 				<div className="text-sm font-light py-4">
 					Here are a few projects that I have worked on recently. Want to see
 					more?{' '}
@@ -21,71 +21,79 @@ const Projects = () => {
 				</div>
 			</div>
 
-			<div class="flex flex-col  space-y-5 sm:flex-row sm:flex-wrap">
-				<div className="image flex w-10/12 mx-auto sm:w-2/5  text-center justify-center items-start">
-					<div className="project-btn absolute text-white z-50 mt-20 px-4">
-						A full MERN stack social media application. Users can create a
-						virtual business card and share a unique URL.
+			<div class="flex flex-col sm:flex-row sm:flex-wrap">
+				<div className=" flex w-10/12 mx-auto sm:w-2/5  text-center justify-center items-start">
+					<div className="image p-5">
+						<div className="project-btn absolute text-white z-50 mt-20 px-4">
+							A full MERN stack social media application. Users can create a
+							virtual business card and share a unique URL.
+						</div>
+						<a
+							className="project-btn absolute text-white z-50 py-2 px-4 border-pink-400 border rounded-full self-end mb-20 hover:bg-pink-400 transition duration-300 "
+							href="https://socialcard-uk.netlify.app/"
+							target="_blank"
+							rel="noreferrer">
+							Visit Website {'>'}
+						</a>
+						<img
+							className="rounded-lg"
+							src={socialCard}
+							alt="Social Card Website"
+						/>
 					</div>
-					<a
-						className="project-btn absolute text-white z-50 py-2 px-4 border-pink-400 border rounded-full self-end mb-20 hover:bg-pink-400 transition duration-300 "
-						href="https://socialcard-uk.netlify.app/"
-						target="_blank"
-						rel="noreferrer">
-						Visit Website {'>'}
-					</a>
-					<img
-						className="rounded-lg"
-						src={socialCard}
-						alt="Social Card Website"
-					/>
 				</div>
-				<div className="image flex w-10/12 sm:w-2/5  mx-auto  text-center justify-center items-start">
-					<div className="project-btn absolute text-white z-50 mt-20 px-4">
-						A full MERN stack application that utilises a music API to demo
-						music and save music to favourites.
+				<div className="flex w-10/12 sm:w-2/5  mx-auto  text-center justify-center items-start">
+					<div className="image p-5">
+						<div className="project-btn absolute text-white z-50 mt-20 px-4">
+							A full MERN stack application that utilises a music API to demo
+							music and save music to favourites.
+						</div>
+						<a
+							className="project-btn absolute text-white z-50 py-2 px-4 border-pink-400 border rounded-full self-end mb-20 hover:bg-pink-400 transition duration-300 "
+							href="https://mymusic-uk.netlify.app/"
+							target="_blank"
+							rel="noreferrer">
+							Visit Website {'>'}
+						</a>
+						<img className="rounded-lg" src={myMusic} alt="My Music Website" />
 					</div>
-					<a
-						className="project-btn absolute text-white z-50 py-2 px-4 border-pink-400 border rounded-full self-end mb-20 hover:bg-pink-400 transition duration-300 "
-						href="https://mymusic-uk.netlify.app/"
-						target="_blank"
-						rel="noreferrer">
-						Visit Website {'>'}
-					</a>
-					<img className="rounded-lg" src={myMusic} alt="My Music Website" />
-				</div>
-
-				<div className="image flex w-10/12 sm:w-2/5  mx-auto  text-center justify-center items-start">
-					<div className="project-btn absolute text-white z-50 mt-20 px-4">
-						An ecommerce front end React JS application for selling cats.
-					</div>
-					<a
-						className="project-btn absolute text-white z-50 py-2 px-4 border-pink-400 border rounded-full self-end mb-20 hover:bg-pink-400 transition duration-300"
-						href="https://cats4lyf20.netlify.app/"
-						target="_blank"
-						rel="noreferrer">
-						Visit Website {'>'}
-					</a>
-					<img className="rounded-lg" src={Cats} alt="Cats 4 Lyf Website" />
 				</div>
 
-				<div className="image flex w-10/12 sm:w-2/5  mx-auto  text-center justify-center items-start">
-					<div className="project-btn absolute text-white z-50 mt-20 px-4">
-						A front-end application for storing master bootcamp resources,
-						reference apps and timetables.
+				<div className="flex w-10/12 sm:w-2/5  mx-auto  text-center justify-center items-start">
+					<div className="image p-5">
+						<div className="project-btn absolute text-white z-50 mt-20 px-4">
+							An ecommerce front end React JS application for selling cats.
+						</div>
+						<a
+							className="project-btn absolute text-white z-50 py-2 px-4 border-pink-400 border rounded-full self-end mb-20 hover:bg-pink-400 transition duration-300"
+							href="https://cats4lyf20.netlify.app/"
+							target="_blank"
+							rel="noreferrer">
+							Visit Website {'>'}
+						</a>
+						<img className="rounded-lg" src={Cats} alt="Cats 4 Lyf Website" />
 					</div>
-					<a
-						className="project-btn absolute text-white z-50 py-2 px-4 border-pink-400 border rounded-full self-end hover:bg-pink-400 transition duration-300 mb-20 "
-						href="https://cn-instructor.netlify.app/"
-						target="_blank"
-						rel="noreferrer">
-						Visit Website {'>'}
-					</a>
-					<img
-						className="rounded-lg"
-						src={Codenation}
-						alt="Codenation resources"
-					/>
+				</div>
+
+				<div className="flex w-10/12 sm:w-2/5  mx-auto  text-center justify-center items-start">
+					<div className="image p-5">
+						<div className="project-btn absolute text-white z-50 mt-20 px-4">
+							A front-end application for storing master bootcamp resources,
+							reference apps and timetables.
+						</div>
+						<a
+							className="project-btn absolute text-white z-50 py-2 px-4 border-pink-400 border rounded-full self-end hover:bg-pink-400 transition duration-300 mb-20 "
+							href="https://cn-instructor.netlify.app/"
+							target="_blank"
+							rel="noreferrer">
+							Visit Website {'>'}
+						</a>
+						<img
+							className="rounded-lg"
+							src={Codenation}
+							alt="Codenation resources"
+						/>
+					</div>
 				</div>
 			</div>
 			<div className="flex justify-center my-10 ">

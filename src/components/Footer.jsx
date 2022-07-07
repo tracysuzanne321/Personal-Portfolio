@@ -4,11 +4,11 @@ import { IconContext } from 'react-icons';
 const Footer = () => {
 	return (
 		<div>
-			<div className="bg-zinc-700 text-white flex justify-evenly py-10 max-w-lg mx-auto rounded-lg -mb-12 relative sm:max-w-2xl md:max-w-4xl lg:max-w-6xl">
+			<div className="bg-zinc-700 text-white flex flex-col sm:flex-row sm:justify-evenly sm:space-y-0 sm:items-center justify-center text-center space-y-10 py-10 max-w-xs mx-auto rounded-lg -mb-12 relative sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl ">
 				<div className="text-2xl font-bold">Get in Touch</div>
 				<div>
 					<a
-						className="border-white border py-4 px-2 rounded-lg hover:bg-pink-400 hover:border-pink-400 transition duration-300"
+						className="border-white border py-3 px-8 rounded-lg hover:bg-pink-400 hover:border-pink-400 transition duration-300"
 						href="mailto:tracysmith32@live.co.uk">
 						Email Me
 					</a>

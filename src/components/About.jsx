@@ -14,17 +14,17 @@ const About = () => {
 						srcset=""
 					/>
 					<div className="bg-pink-400 flex flex-col space-y-5 text-center pt-16 pb-48 ">
-						<h3 className="text-xl font-bold text-white">
+						<h3 className="text-2xl font-bold text-white">
 							Hi, I'm Tracy. Nice to meet you.
 						</h3>
-						<p className="max-w-sm mx-auto text-sm text-white font-light md:max-w-5xl ">
+						<p className="max-w-xs mx-auto text-sm text-white font-light sm:max-w-xl md:max-w-2xl lg:max-w-4xl ">
 							I have been designing and developing websites as a hobby since
 							2015. In July 2021, during the lockdown, I decided to make a
 							change and follow my passion. I registered for a coding boot camp
 							to update my knowledge and handed in my notice as a customer
 							service manager.
 						</p>
-						<p className="max-w-sm mx-auto text-sm text-white font-light  md:max-w-5xl">
+						<p className="max-w-xs mx-auto text-sm text-white font-light sm:max-w-xl md:max-w-2xl lg:max-w-4xl">
 							During the Bootcamp, I was introduced to React JS, which is my new
 							found passion, and I have developed several full-stack React Apps
 							and have utilised many third-party libraries within them. During
@@ -32,7 +32,7 @@ const About = () => {
 							an individual task, and for the final group project, our amazing
 							group created a social media full-stack application.
 						</p>
-						<p className="max-w-sm mx-auto text-sm text-white font-light md:max-w-5xl">
+						<p className="max-w-xs mx-auto text-sm text-white font-light sm:max-w-xl md:max-w-2xl lg:max-w-4xl">
 							I graduated from Codenation Bootcamp and was subsequently offered
 							a role as an Innovation Developer and quickly progressed to a
 							Software Instructor. During my time at Codenation, besides
@@ -46,7 +46,7 @@ const About = () => {
 						</p>
 					</div>
 
-					<div className=" main bg-white border  border-gray-300 rounded-md max-w-4xl mx-auto flex flex-col md:flex-row justify-evenly py-10 text-center lg:max-w-6xl">
+					<div className=" main bg-white border  border-gray-300 rounded-md max-w-xs mx-auto flex flex-col md:flex-row justify-evenly py-10 text-center sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
 						<div className="flex flex-col w-50%  ">
 							<img
 								className="w-10 h-10 mx-auto "
