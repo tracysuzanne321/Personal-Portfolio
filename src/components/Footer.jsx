@@ -4,7 +4,9 @@ import { IconContext } from 'react-icons';
 const Footer = () => {
 	return (
 		<div>
-			<div className="bg-zinc-700 text-white flex flex-col sm:flex-row sm:justify-evenly sm:space-y-0 sm:items-center justify-center text-center space-y-10 py-10 max-w-xs mx-auto rounded-lg -mb-12 relative sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl ">
+			<div
+				id="contact"
+				className="bg-zinc-700 text-white flex flex-col sm:flex-row sm:justify-evenly sm:space-y-0 sm:items-center justify-center text-center space-y-10 py-10 max-w-xs mx-auto rounded-lg -mb-12 relative sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl ">
 				<div className="text-2xl font-bold">Get in Touch</div>
 				<div>
 					<a

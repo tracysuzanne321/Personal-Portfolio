@@ -46,7 +46,9 @@ const About = () => {
 						</p>
 					</div>
 
-					<div className=" main bg-white border  border-gray-300 rounded-md max-w-xs mx-auto flex flex-col md:flex-row justify-evenly py-10 text-center sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
+					<div
+						id="experience"
+						className=" main bg-white border  border-gray-300 rounded-md max-w-xs mx-auto flex flex-col md:flex-row justify-evenly py-10 text-center sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
 						<div className="flex flex-col w-50%  ">
 							<img
 								className="w-10 h-10 mx-auto "
